@@ -13,7 +13,7 @@ public static class SeedData // Ajout d’une nouvelle classe SeedData dans Mode
         serviceProvider.GetRequiredService<
         DbContextOptions<ProjetC_Context>>()))
         {
-            context.Database.EnsureDeleted();
+           
             context.Database.EnsureCreated();
             // S’il y a déjà des films dans la base
             if (context.ConsoleJeu.Any())
