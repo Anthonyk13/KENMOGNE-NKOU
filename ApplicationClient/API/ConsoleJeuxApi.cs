@@ -15,11 +15,14 @@
 
 namespace ApplicationClient.API
 {
+    using System.Threading.Tasks;
     using System = global::System;
 
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.18.2.0 (NJsonSchema v10.8.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial interface IConsoleJeux
     {
+        object ConsoleJeu { get; }
+
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
         System.Threading.Tasks.Task<System.Collections.Generic.ICollection<ConsoleJeu>> ConsoleJeuxAllAsync();
@@ -118,11 +121,13 @@ namespace ApplicationClient.API
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
         System.Threading.Tasks.Task<System.Collections.Generic.ICollection<WeatherForecast>> GetWeatherForecastAsync(System.Threading.CancellationToken cancellationToken);
-
+        Task FilmsPUTAsync(int id, ConsoleJeu consoleJeu);
+        object Attach(ConsoleJeu consoleJeu);
+        Task SaveChangesAsync();
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.18.2.0 (NJsonSchema v10.8.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class ConsoleJeux : IConsoleJeux
+    public partial class ConsoleJeux: IConsoleJeux
     {
         private string _baseUrl = "https://localhost:5146";
         private System.Net.Http.HttpClient _httpClient;
@@ -1006,6 +1011,8 @@ namespace ApplicationClient.API
 
         public bool ReadResponseAsString { get; set; }
 
+        public object ConsoleJeu => throw new NotImplementedException();
+
         protected virtual async System.Threading.Tasks.Task<ObjectResponseResult<T>> ReadObjectResponseAsync<T>(System.Net.Http.HttpResponseMessage response, System.Collections.Generic.IReadOnlyDictionary<string, System.Collections.Generic.IEnumerable<string>> headers, System.Threading.CancellationToken cancellationToken)
         {
             if (response == null || response.Content == null)
@@ -1091,6 +1098,21 @@ namespace ApplicationClient.API
 
             var result = System.Convert.ToString(value, cultureInfo);
             return result == null ? "" : result;
+        }
+
+        public Task FilmsPUTAsync(int id, ConsoleJeu consoleJeu)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object Attach(ConsoleJeu consoleJeu)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SaveChangesAsync()
+        {
+            throw new NotImplementedException();
         }
     }
 
