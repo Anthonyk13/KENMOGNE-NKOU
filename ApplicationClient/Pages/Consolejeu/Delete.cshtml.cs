@@ -21,26 +21,7 @@ namespace ApplicationClient.Pages.Consolejeu
         [BindProperty]
         public ConsoleJeu ConsoleJeu { get; set; } 
 
-        public async Task<IActionResult> OnGetAsync(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var consolejeu = await _client.ConsoleJeuxGETAsync(id.Value);
-
-            if (consolejeu == null)
-            {
-                return NotFound();
-            }
-            else
-            {
-                ConsoleJeu = consolejeu;
-            }
-            return Page();
-        }
-
+      
         public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (id == null)

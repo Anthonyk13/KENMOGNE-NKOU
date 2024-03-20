@@ -124,6 +124,7 @@ namespace ApplicationClient.API
         Task FilmsPUTAsync(int id, ConsoleJeu consoleJeu);
         object Attach(ConsoleJeu consoleJeu);
         Task SaveChangesAsync();
+        Task<ConsoleJeu> ConsoleJeuxGET(int? id);
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NSwag", "13.18.2.0 (NJsonSchema v10.8.0.0 (Newtonsoft.Json v13.0.0.0))")]
@@ -1111,6 +1112,11 @@ namespace ApplicationClient.API
         }
 
         public Task SaveChangesAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ConsoleJeu> ConsoleJeuxGET(int? id)
         {
             throw new NotImplementedException();
         }

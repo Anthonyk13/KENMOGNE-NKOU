@@ -6,7 +6,7 @@ using ApplicationClient.API;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using ApplicationClient.API;
+
 
 
 namespace ApplicationClient.Pages.Consolejeu

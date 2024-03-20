@@ -33,11 +33,12 @@ namespace ApplicationClient.Pages.Consolejeu
             {
                 return Page();
             }
+
             try
             {
                 await _client.ConsoleJeuxPOSTAsync(ConsoleJeu);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return RedirectToPage("./Index");
             }

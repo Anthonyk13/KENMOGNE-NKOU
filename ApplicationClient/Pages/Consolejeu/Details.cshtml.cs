@@ -22,23 +22,24 @@ namespace ApplicationClient.Pages.Consolejeu
 
         public ConsoleJeu ConsoleJeu { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGETAsync(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-
-            var consolejeu = await _client.ConsoleJeuxGETAsync(id.Value);
-            if (consolejeu == null)
+           
+             ConsoleJeu = await _client.ConsoleJeuxGET(id);
+            if (ConsoleJeu == null)
             {
                 return NotFound();
             }
             else
             {
-                ConsoleJeu = consolejeu;
+                ConsoleJeu = ConsoleJeu;
             }
             return Page();
         }
+        
     }
 }
