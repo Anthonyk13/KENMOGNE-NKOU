@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ApplicationClient.API;
 
-namespace ApplicationClient.Pages.Consolejeu
+namespace ApplicationClient.Pages.Vente
 {
     public class CreateModel : PageModel
     {
@@ -24,7 +24,7 @@ namespace ApplicationClient.Pages.Consolejeu
         }
 
         [BindProperty]
-        public ConsoleJeu ConsoleJeu { get; set; } = default!;
+        public Ventes Ventes { get; set; } = default!;
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
@@ -34,15 +34,7 @@ namespace ApplicationClient.Pages.Consolejeu
                 return Page();
             }
 
-            try
-            {
-                await _client.ConsoleJeuxPOSTAsync(ConsoleJeu);
-                await _client.SaveChangesAsync();
-            }
-            catch (Exception)
-            {
-                return RedirectToPage("./Index");
-            }
+            _client.VentesPOSTAsync(Ventes);
             await _client.SaveChangesAsync();
 
             return RedirectToPage("./Index");

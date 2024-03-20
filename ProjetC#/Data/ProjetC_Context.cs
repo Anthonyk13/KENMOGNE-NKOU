@@ -16,5 +16,8 @@ namespace ProjetC_.Data
 
         public DbSet<ProjetC_.Models.ConsoleJeu> ConsoleJeu { get; set; } = default!;
         public DbSet<ProjetC_.Models.Ventes> Ventes { get; set; } = default!;
+
+       
+        
     }
 }

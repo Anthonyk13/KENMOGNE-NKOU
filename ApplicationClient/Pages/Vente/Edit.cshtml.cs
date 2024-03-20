@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ApplicationClient.API;
 
-namespace ApplicationClient.Pages.Consolejeu
+namespace ApplicationClient.Pages.Vente
 {
     public class EditModel : PageModel
     {
@@ -19,26 +19,10 @@ namespace ApplicationClient.Pages.Consolejeu
             _client = client;
         }
 
-
         [BindProperty]
-        public ConsoleJeu ConsoleJeu { get; set; } = default!;
+        public Ventes Ventes { get; set; } = default!;
 
-        public async Task<IActionResult> OnPOSTAsync(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-             ConsoleJeu = await _client.ConsoleJeuxGETAsync(id.Value);
-            if (ConsoleJeu == null)
-            {
-                return NotFound();
-            }
-            ConsoleJeu = ConsoleJeu;
-            return Page();
-        }
-
+       
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
@@ -49,7 +33,8 @@ namespace ApplicationClient.Pages.Consolejeu
             }
             try
             {
-                await _client.ConsoleJeuxPUTAsync(ConsoleJeu.Id, ConsoleJeu);
+                await _client.VentesPUTAsync(Ventes.Id, Ventes);
+                await _client.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -60,6 +45,6 @@ namespace ApplicationClient.Pages.Consolejeu
             return RedirectToPage("./Index");
 
         }
+       
     }
 }
-
