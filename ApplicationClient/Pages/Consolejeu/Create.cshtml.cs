@@ -37,13 +37,13 @@ namespace ApplicationClient.Pages.Consolejeu
             try
             {
                 await _client.ConsoleJeuxPOSTAsync(ConsoleJeu);
-                await _client.SaveChangesAsync();
+                
             }
             catch (Exception)
             {
                 return RedirectToPage("./Index");
             }
-            await _client.SaveChangesAsync();
+           
 
             return RedirectToPage("./Index");
         }

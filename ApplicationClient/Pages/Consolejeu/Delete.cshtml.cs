@@ -19,9 +19,27 @@ namespace ApplicationClient.Pages.Consolejeu
         }
 
         [BindProperty]
-        public ConsoleJeu ConsoleJeu { get; set; } 
+        public ConsoleJeu ConsoleJeu { get; set; } = default!;
 
-      
+        /*public async Task<IActionResult> OnGetAsync(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var ConsoleJeu = await _client.ConsoleJeuxGETAsync(id.Value);
+           if(ConsoleJeu == null)
+            {
+                return NotFound();
+            }
+           else
+            {
+                ConsoleJeu = ConsoleJeu;
+            }
+
+
+            return Page();
+        }*/
         public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (id == null)
@@ -32,7 +50,7 @@ namespace ApplicationClient.Pages.Consolejeu
             {
                 await _client.ConsoleJeuxDELETEAsync(id.Value);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return RedirectToPage("./Index");
             }

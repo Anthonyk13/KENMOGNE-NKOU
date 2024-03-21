@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using ApplicationClient.API;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-
 
 namespace ApplicationClient.Pages.Consolejeu
 {
@@ -19,27 +14,26 @@ namespace ApplicationClient.Pages.Consolejeu
             _client = client;
         }
 
+        public ConsoleJeu ConsoleJeu { get; private set; }
 
-        public ConsoleJeu ConsoleJeu { get; set; } = default!;
-
-        public async Task<IActionResult> OnGETAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-           
-             ConsoleJeu = await _client.ConsoleJeuxGET(id);
+
+            // Récupérer les données de la console de jeu depuis l'API
+            ConsoleJeu = await _client.ConsoleJeuxGETAsync(id.Value);
+
+            // Vérifier si la console de jeu existe
             if (ConsoleJeu == null)
             {
                 return NotFound();
             }
-            else
-            {
-                ConsoleJeu = ConsoleJeu;
-            }
+
+            // Retourner la vue des détails de la console de jeu
             return Page();
         }
-        
     }
 }

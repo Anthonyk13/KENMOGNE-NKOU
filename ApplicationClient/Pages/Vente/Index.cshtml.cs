@@ -23,6 +23,7 @@ namespace ApplicationClient.Pages.Vente
         public async Task OnGETAsync()
         {
             Ventes = (await _client.VentesAllAsync()).ToList();
+           
         }
     }
 }

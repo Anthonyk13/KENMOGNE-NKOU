@@ -34,8 +34,12 @@ namespace ApplicationClient.Pages.Vente
                 return Page();
             }
 
-            _client.VentesPOSTAsync(Ventes);
-            await _client.SaveChangesAsync();
+            try { await _client.VentesPOSTAsync(Ventes); 
+            }catch (Exception ex)
+            {
+                return RedirectToPage("./Index");
+            }
+            
 
             return RedirectToPage("./Index");
         }

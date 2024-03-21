@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using ApplicationClient.API;
 
 namespace ApplicationClient.Pages.Consolejeu
 {
-    public class EditModel : PageModel
+    public class EditModel : PageModel 
     {
         private readonly IConsoleJeux _client;
 
@@ -19,47 +15,43 @@ namespace ApplicationClient.Pages.Consolejeu
             _client = client;
         }
 
-
         [BindProperty]
-        public ConsoleJeu ConsoleJeu { get; set; } = default!;
+        public ConsoleJeu ConsoleJeu { get; set; }
 
-        public async Task<IActionResult> OnPOSTAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-             ConsoleJeu = await _client.ConsoleJeuxGETAsync(id.Value);
+            ConsoleJeu = await _client.ConsoleJeuxGETAsync(id.Value);
+
             if (ConsoleJeu == null)
             {
                 return NotFound();
             }
-            ConsoleJeu = ConsoleJeu;
+
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
+
             try
             {
                 await _client.ConsoleJeuxPUTAsync(ConsoleJeu.Id, ConsoleJeu);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return RedirectToPage("./Index");
             }
 
-
             return RedirectToPage("./Index");
-
         }
     }
 }
-
