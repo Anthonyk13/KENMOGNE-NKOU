@@ -1,0 +1,2 @@
+https://projetc20240321171045.azurewebsites.net/api/Consolejeux
+https://projetc20240321171045.azurewebsites.net/api/Ventes
