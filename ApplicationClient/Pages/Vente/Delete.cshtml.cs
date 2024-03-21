@@ -21,8 +21,26 @@ namespace ApplicationClient.Pages.Vente
         [BindProperty]
         public Ventes Ventes { get; set; } = default!;
 
-       
 
+        public async Task<IActionResult> OnGetAsync(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var ConsoleJeu = await _client.VentesGETAsync(id.Value);
+            if (ConsoleJeu == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                Ventes = Ventes;
+            }
+
+
+            return Page();
+        }
         public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (id == null)

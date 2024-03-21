@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ce fichier est utilisé par le processus de publication/package de votre projet web. Vous pouvez personnaliser le comportement de ce processus
+en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, visitez https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxuzOBUfoKEiUEj1ywGTV4wAAAAACAAAAAAAQZgAAAAEAACAAAAC8rUESr6rba5zZTtoAHKn5ProCXSNaeVWRiQKKcGomuAAAAAAOgAAAAAIAACAAAADCyYe+qINyABIoyv54mdqMHaa56HWfE66ZAkkZorjMkIAAAAAIJpWm6FsW7/XIVlJ0xgxwHTRKfHZKWWZsYrx+VoH0+tsGLQrJfD1r1aElEQvWyRCe+Yjv5L1a9bUrqYWbq+cKzJ0sOqVDME4HsksTWF0iGI5NFxVfRgE3vRMvwBoo8OKuFhBKJve/UP7xZBD8OzQOpAJECzZElEEmIT5zBv4so0AAAABmQrFwaQCqnTIdCjalIlQNa/lFWI5O6q/DDKopV+0TB7jfUa5ZP+hEp4ePKOOPuYFsSgSq65Zy08N+AfFi04v1</EncryptedPassword>
+    <History>True|2024-03-21T16:36:21.1605748Z;True|2024-03-21T17:27:01.5923492+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ProjetC_Context">
+      <Value>Data Source=applicationclientdbserver.database.windows.net,1433%3bInitial Catalog=ApplicationClient_db%3bUser ID=WendyGlenn%3bPassword=Yelenaanthony%2a</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ProjetC_.Data.ProjetC_Context">
+      <Value>Data Source=applicationclientdbserver.database.windows.net,1433%3bInitial Catalog=ApplicationClient_db%3bUser ID=WendyGlenn%3bPassword=Yelenaanthony%2a</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

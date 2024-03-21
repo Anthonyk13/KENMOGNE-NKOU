@@ -21,7 +21,7 @@ namespace ApplicationClient.Pages.Consolejeu
         [BindProperty]
         public ConsoleJeu ConsoleJeu { get; set; } = default!;
 
-        /*public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
             {
@@ -39,7 +39,7 @@ namespace ApplicationClient.Pages.Consolejeu
 
 
             return Page();
-        }*/
+        }
         public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (id == null)

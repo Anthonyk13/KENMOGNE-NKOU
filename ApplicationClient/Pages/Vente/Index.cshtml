@@ -17,28 +17,28 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Ventes[0].SalesNumber)
+                    Sales Number
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Ventes[0].Year)
+                    Year
                 </th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model.Ventes)
+            @foreach (var vente in Model.Ventes)
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.SalesNumber)
+                        @vente.SalesNumber
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Year)
+                        @vente.Year
                     </td>
                     <td>
-                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                        <a asp-page="./Edit" asp-route-id="@vente.Id">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@vente.Id">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@vente.Id">Delete</a>
                     </td>
                 </tr>
             }
