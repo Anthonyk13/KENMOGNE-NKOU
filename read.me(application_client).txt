@@ -1,0 +1,3 @@
+https://clientfinal.azurewebsites.net/
+
+DAns le cas de ConsoleJeu il n'y a que la page create qui fonctionne
