@@ -17,79 +17,79 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ApplicationClient
 build_property.RootNamespace = ApplicationClient
-build_property.ProjectDir = C:\Users\glenn\KENMOGNE-NKOU\ApplicationClient\
+build_property.ProjectDir = C:\Users\46425368\KENMOGNE-NKOU\ApplicationClient\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\glenn\KENMOGNE-NKOU\ApplicationClient
+build_property.MSBuildProjectDirectory = C:\Users\46425368\KENMOGNE-NKOU\ApplicationClient
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Create.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc29sZWpldVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Delete.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc29sZWpldVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Details.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc29sZWpldVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Edit.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc29sZWpldVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Index.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Consolejeu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc29sZWpldVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Error.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Index.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Privacy.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Create.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Delete.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Details.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Edit.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Index.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Vente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/_ViewImports.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/_ViewStart.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/glenn/KENMOGNE-NKOU/ApplicationClient/Pages/Shared/_Layout.cshtml]
+[C:/Users/46425368/KENMOGNE-NKOU/ApplicationClient/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bxjdm5gnsj

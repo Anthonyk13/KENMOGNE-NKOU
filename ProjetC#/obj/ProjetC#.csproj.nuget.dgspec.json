@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\glenn\\KENMOGNE-NKOU\\ProjetC#\\ProjetC#.csproj": {}
+    "C:\\Users\\46425368\\KENMOGNE-NKOU\\ProjetC#\\ProjetC#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\glenn\\KENMOGNE-NKOU\\ProjetC#\\ProjetC#.csproj": {
+    "C:\\Users\\46425368\\KENMOGNE-NKOU\\ProjetC#\\ProjetC#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\glenn\\KENMOGNE-NKOU\\ProjetC#\\ProjetC#.csproj",
+        "projectUniqueName": "C:\\Users\\46425368\\KENMOGNE-NKOU\\ProjetC#\\ProjetC#.csproj",
         "projectName": "ProjetC#",
-        "projectPath": "C:\\Users\\glenn\\KENMOGNE-NKOU\\ProjetC#\\ProjetC#.csproj",
-        "packagesPath": "C:\\Users\\glenn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\glenn\\KENMOGNE-NKOU\\ProjetC#\\obj\\",
+        "projectPath": "C:\\Users\\46425368\\KENMOGNE-NKOU\\ProjetC#\\ProjetC#.csproj",
+        "packagesPath": "C:\\Users\\46425368\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\46425368\\KENMOGNE-NKOU\\ProjetC#\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\glenn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\46425368\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

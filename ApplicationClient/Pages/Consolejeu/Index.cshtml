@@ -4,6 +4,13 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    body {
+        background-image: url('/images/Consoles_ventes_background/6.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+</style>
 
 <h1>Index</h1>
 
@@ -26,23 +33,24 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.ConsoleJeu) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.GameModel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ConstructorName)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.ConsoleJeu)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GameModel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ConstructorName)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

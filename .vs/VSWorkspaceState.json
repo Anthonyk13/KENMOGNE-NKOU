@@ -1,14 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ApplicationClient",
-    "\\ApplicationClient\\API",
-    "\\ProjetC#\\bin",
-    "\\ProjetC#\\bin\\Release",
-    "\\ProjetC#\\Data",
-    "\\ProjetC#\\Models",
-    "\\ProjetC#\\obj",
-    "\\ProjetC#\\Properties"
+    "\\ApplicationClient"
   ],
   "PreviewInSolutionExplorer": false
 }

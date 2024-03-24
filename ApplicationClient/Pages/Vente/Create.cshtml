@@ -5,35 +5,72 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<style>
+    .create-header {
+        margin-bottom: 30px;
+    }
 
-<h4>Ventes</h4>
+    .form-container {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .back-link {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+</style>
+
+<div class="create-header">
+    <h1>Create</h1>
+    <h4>Ventes</h4>
+</div>
+
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Ventes.SalesNumber" class="control-label"></label>
-                <input asp-for="Ventes.SalesNumber" class="form-control" />
-                <span asp-validation-for="Ventes.SalesNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Ventes.Year" class="control-label"></label>
-                <input asp-for="Ventes.Year" class="form-control" />
-                <span asp-validation-for="Ventes.Year" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 form-container">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="form-group">
+                    <label asp-for="Ventes.SalesNumber" class="control-label"></label>
+                    <input asp-for="Ventes.SalesNumber" class="form-control" />
+                    <span asp-validation-for="Ventes.SalesNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Ventes.Year" class="control-label"></label>
+                    <input asp-for="Ventes.Year" class="form-control" />
+                    <span asp-validation-for="Ventes.Year" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-<div>
+<div class="back-link">
     <a asp-page="Index">Back to List</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

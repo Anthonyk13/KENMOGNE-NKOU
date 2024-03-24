@@ -5,6 +5,14 @@
     ViewData["Title"] = "Index";
 }
 
+<style>
+    body {
+        background-image: url('/images/Consoles_ventes_background/6.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
 <h1>Index</h1>
 
 <p>
@@ -17,12 +25,12 @@
         <thead>
             <tr>
                 <th>
-                    Sales Number
+                    @Html.DisplayNameFor(model => model.Ventes[0].SalesNumber)
                 </th>
                 <th>
-                    Year
+                    @Html.DisplayNameFor(model => model.Ventes[0].Year)
                 </th>
-                <th></th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -30,10 +38,10 @@
             {
                 <tr>
                     <td>
-                        @vente.SalesNumber
+                        @Html.DisplayFor(modelItem => vente.SalesNumber)
                     </td>
                     <td>
-                        @vente.Year
+                        @Html.DisplayFor(modelItem => vente.Year)
                     </td>
                     <td>
                         <a asp-page="./Edit" asp-route-id="@vente.Id">Edit</a> |
