@@ -3,8 +3,8 @@ https://clientfinal.azurewebsites.net/
 
 https://clientfinal.azurewebsites.net/Vente
 https://clientfinal.azurewebsites.net/Vente/Create
-Car les pages (Détails,Delete et Edit) nous mettent des erreurs donc ces URLs c'est juste pour que vous puissiez voir la mise en forme de nos pages HTML
+
 
 
 https://clientfinal.azurewebsites.net/ConsoleJeu/Create
-Pareil ici
+
